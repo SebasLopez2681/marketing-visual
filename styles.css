@@ -7,23 +7,53 @@
 
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   color: #333;
+  line-height: 1.6;
 }
 
 /* Encabezado */
 header {
   background-color: #333;
   color: #fff;
-  padding: 2rem;
   text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+/* Navegación */
+nav {
+  background-color: #444;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #555;
 }
 
 /* Secciones */
 section {
   padding: 2rem;
-  margin: 1rem;
+  margin: 1rem auto;
+  max-width: 800px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -34,11 +64,63 @@ section h2 {
   color: #444;
 }
 
+/* Grid de Contenido */
+.content-grid, .template-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Tarjetas de Tutoriales */
+.card, .template-card {
+  flex: 1 1 250px;
+  padding: 1rem;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3, .template-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Formulario de Contacto */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 1rem;
+}
+
+form input, form textarea, form button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 /* Pie de página */
 footer {
   text-align: center;
   padding: 1rem;
   background-color: #333;
   color: #fff;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }

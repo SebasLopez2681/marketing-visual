@@ -10,30 +10,99 @@
   <!-- Encabezado -->
   <header>
     <h1>Marketing Visual para Emprendedores</h1>
-    <p>¡Eleva tu marca con herramientas de marketing visual!</p>
+    <p>Eleva tu marca con herramientas de marketing visual diseñadas para emprendedores.</p>
   </header>
+
+  <!-- Menú de Navegación -->
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#tutoriales">Tutoriales</a></li>
+      <li><a href="#plantillas">Plantillas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
 
   <!-- Sección de Inicio -->
   <section id="inicio">
     <h2>Inicio</h2>
-    <p>Descubre cómo mejorar la visibilidad de tu marca con nuestras herramientas de marketing visual.</p>
+    <p>Descubre cómo mejorar la visibilidad de tu marca con nuestras herramientas y recursos de marketing visual.</p>
   </section>
 
   <!-- Sección de Tutoriales -->
   <section id="tutoriales">
     <h2>Tutoriales</h2>
-    <p>Explora tutoriales de fotografía, edición y estrategias de redes sociales para emprendedores.</p>
+    <div class="content-grid">
+      <div class="card">
+        <h3>Fotografía de Productos</h3>
+        <p>Aprende técnicas básicas para capturar imágenes de alta calidad que destaquen tus productos.</p>
+        <button>Ver tutorial</button>
+      </div>
+      <div class="card">
+        <h3>Edición Básica</h3>
+        <p>Mejora tus fotos con ajustes de brillo, contraste y filtros para un look profesional.</p>
+        <button>Ver tutorial</button>
+      </div>
+      <div class="card">
+        <h3>Redes Sociales</h3>
+        <p>Optimiza tus publicaciones para atraer seguidores y aumentar la visibilidad de tu marca.</p>
+        <button>Ver tutorial</button>
+      </div>
+    </div>
   </section>
 
   <!-- Sección de Plantillas -->
   <section id="plantillas">
     <h2>Plantillas</h2>
     <p>Descarga plantillas listas para personalizar y destacar tus productos en redes sociales.</p>
+    <div class="template-grid">
+      <div class="template-card">
+        <h3>Plantilla para Instagram</h3>
+        <button>Descargar</button>
+      </div>
+      <div class="template-card">
+        <h3>Plantilla para Facebook</h3>
+        <button>Descargar</button>
+      </div>
+      <div class="template-card">
+        <h3>Plantilla de Historias</h3>
+        <button>Descargar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
   </section>
 
   <!-- Pie de página -->
   <footer>
     <p>&copy; 2024 Marketing Visual para Emprendedores. Todos los derechos reservados.</p>
   </footer>
+
+  <!-- Script de Desplazamiento Suave -->
+  <script>
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>
